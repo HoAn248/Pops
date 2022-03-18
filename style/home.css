@@ -268,7 +268,7 @@ section .slider-pops h2 div {
   width: 0.7rem;
   height: 100%;
   border-radius: 1rem;
-  background-color: #ea6016;
+  background: linear-gradient(to top, red, #fd8302);
 }
 section .slider-pops .list-slide {
   width: 200%;

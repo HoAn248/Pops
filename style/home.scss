@@ -278,7 +278,9 @@ section{
                 width: 0.7rem;
                 height: 100%;
                 border-radius: 1rem;
-                background-color: #ea6016;
+                // background-color: #ea6016;
+                background: linear-gradient(to top,red,#fd8302);
+
             }
         }
         .list-slide{
