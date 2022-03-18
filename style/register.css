@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: linear-gradient(to top ,rgba(255, 246, 246,0),rgba(37, 37, 37,0.9));
+}
+header img{
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    width: 150px;
+}
+body{
+    background-image: linear-gradient(to right bottom, rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 0.8)),
+    url(https://cdn.popsww.com/popsapp/assets/images/desktop/signin-signup/bg@3x_tiny.jpg);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    /* background-color: aquamarine; */
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#register{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 500px;
+    background-color: #242424;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 15px 30px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 17px;
+    padding: 50px 90px;
+    text-align: center;
+}
+#register h2{
+    font-size: 38px;
+    padding-bottom: 20px;
+}
+#register p{
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+.register-icons {
+    display: flex;
+    justify-content: center;
+}
+.register-icons img{
+    cursor: pointer;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 13px 30px 30px;
+}
+h5 {
+    display: flex;
+    flex-direction: row;
+    color: #969696;
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+h5:before, h5:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+h5:before {
+    margin-right: 10px
+}
+h5:after {
+    margin-left: 10px
+}
+form input{
+    width: 100%;
+    height: 52px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+    border: 0;
+    background-color: #353434;
+    text-indent: 2rem;
+    font-size: 18px;
+    color: #ea6016;
+}
+
+form .register-input div{
+    position: relative;
+}
+form div i{
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+form input:focus{
+    outline-style: solid;
+    outline-color: #ea6016;
+    /* border: 1px solid #ea6016; */
+}
+
+form button{
+    width: 100%;
+    height: 52px;
+    /* margin-top: 20px; */
+    border-radius: 5px;
+    border: 0;
+    background-color: #929292;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+form div span{
+    height: 20px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 10px 0 0 0;
+    font-size: 20px;
+    color: #ea3c2a;
+    font-weight: 100;
+}
+form .register-input{
+    padding: 10px 0 0 0;
+}
+#register h3{
+    color: #ea6016;
+    font-size: 2rem;
+    margin-top: 45px;
+    cursor: pointer;
+}
+#register h4{
+    font-size: 2rem;
+    margin-top: 45px;
+    font-weight: normal;
+    color:#808080;
+}
+#register h4 a{
+    text-decoration: none;
+    color: #ea6016;
+    font-weight: bold;
+}
+#register form p{
+    padding: unset;
+    margin-top: 15px;
+    font-size: 20px;
+}
+form p{
+    color: #808080;
+}
+#register form p a{
+    color: #0079ff;
+}
