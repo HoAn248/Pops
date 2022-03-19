@@ -15,11 +15,12 @@ document.querySelectorAll('input').forEach(e => {
 eyes.forEach((e)=>{
     e.onclick = ()=>{
         if(e.className == 'fa-regular fa-eye'){
-            e.parentElement.querySelector('input').type = 'password';
             e.className = 'fa-regular fa-eye-slash'
+            e.parentElement.querySelector('input').type = 'text';
         }
         else{
-            e.parentElement.querySelector('input').type = 'text';
+            e.parentElement.querySelector('input').type = 'password';
+            
             e.className = 'fa-regular fa-eye'
         }
         

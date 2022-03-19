@@ -123,13 +123,16 @@ async function checkUsers(email, password) {
 
 let eyes = document.querySelector('form div i')
 eyes.onclick = () => {
-    if (eyes.className == 'fa-regular fa-eye') {
-        eyes.parentElement.querySelector('input').type = 'password';
+    if (eyes.className === 'fa-regular fa-eye') {
         eyes.className = 'fa-regular fa-eye-slash'
-    }
-    else if (eyes.className = 'fa-regular fa-eye-slash') {
         eyes.parentElement.querySelector('input').type = 'text';
+        
+    }
+    else if (eyes.className === 'fa-regular fa-eye-slash') {
         eyes.className = 'fa-regular fa-eye'
+        eyes.parentElement.querySelector('input').type = 'password';
+        
+        
     }
 
 }

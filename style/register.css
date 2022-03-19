@@ -95,7 +95,8 @@ form input{
     background-color: #353434;
     text-indent: 2rem;
     font-size: 18px;
-    color: #ea6016;
+    caret-color: #ea6016;
+    color: white;
 }
 
 form .register-input div{
