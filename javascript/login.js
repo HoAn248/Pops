@@ -49,9 +49,9 @@ login.onclick = (e) => {
         if(check){
             users.then(data => {
                 if (data === 1) {
-                    window.open('http://127.0.0.1:5500/Pops/index.html', "_self")
+                    window.open('https://hoan248.github.io/Pops/index.html', "_self")
                 } else {
-                    error(`Email hoặc mật khẩu không đúng. Nếu bạn chưa có tài khoản, vui lòng chọn`,'<a href="https://hoan248.github.io/Pops/index.html/">ĐĂNG KÝ</a>')
+                    error(`Email hoặc mật khẩu không đúng. Nếu bạn chưa có tài khoản, vui lòng chọn`,'<a href="https://hoan248.github.io/Pops/html/register.html">ĐĂNG KÝ</a>')
                 }
     
             })
