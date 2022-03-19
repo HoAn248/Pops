@@ -130,6 +130,12 @@ form button{
     font-weight: bold;
     font-size: 1.8rem;
 }
+form button:hover{
+    filter: drop-shadow(0px 0px 5px #ea6016);
+}
+.login-active{
+    background-color: #ea6016;
+}
 #login h3{
     color: #ea6016;
     font-size: 2rem;
@@ -186,4 +192,7 @@ form button{
 .result-active{
     opacity: 1;
     bottom: 80px;
+}
+.result a{
+    color: white;
 }
