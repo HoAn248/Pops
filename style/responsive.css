@@ -21,7 +21,8 @@
       border-radius: 0.5rem;
       margin-top: 4rem;
       width: 22rem;
-      background-color: black;
+      /* background-color: black; */
+      background-color: #353434;
       display: none;
       position: absolute;
       right: 0;
@@ -29,7 +30,7 @@
     header .list-content ul div {
       box-sizing: border-box;
       position: absolute;
-      border-bottom: 1.8rem solid black;
+      border-bottom: 1.8rem solid #353434;
       border-left: 1.8rem solid transparent;
       border-right: 1.8rem solid transparent;
       right: 1.8rem;
@@ -37,6 +38,16 @@
     }
     header .list-content ul li {
       margin: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    header .list-content ul li img{
+      display: block;
+      width: 15%;
+    }
+    header .list-content ul li a{
+      width: 85%;
+      margin-left: 5%;
     }
     header .box-search {
       width: 40%;
@@ -50,6 +61,7 @@
     }
   }
 @media screen and (max-width: 900px) {
+
     header {
       height: 10rem;
       flex-wrap: wrap;

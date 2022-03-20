@@ -22,25 +22,93 @@
                 <i class="fa-solid fa-bars-staggered"></i>
                 <ul>
                     <div></div>
-                    <li> <a href="">Thiếu Nhi</a></li>
-                    <li><a href="">Comics</a></li>
-                    <li><a href="">Anime</a></li>
-                    <li><a href="">Phim</a></li>
-                    <li><a href="">Thêm</a></li>
+                    <li><img src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/pops_logos_20-26ba97acdcf0-1616743138911-AX3bvCRG.png?v=0&maxW=60"
+                            alt=""><a href="">Thiếu Nhi</a></li>
+                    <li><img src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/comic_white-9372aa873a52-1589764992190-SBOtAyLC.png?v=0&maxW=60"
+                            alt=""><a href="">Comics</a></li>
+                    <li><img src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/anime_white-e1681a2d1332-1585196068850-5arYvMAy.jpg?v=0&maxW=60"
+                            alt=""><a href="">Anime</a></li>
+                    <li><img src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/film3x-9e5acef69b16-1632818468487-0oPCjqhb.png?v=0&maxW=60"
+                            alt=""><a href="">Phim</a></li>
+                    <li><img src="https://vnw-img-cdn.popsww.com/api/v2/containers/file2/cms_thumbnails/ic_more_3x-6c0a095c5991-1584097634305-a3PzijUW.png?v=0&maxW=60"
+                            alt=""><a href="">Thêm</a></li>
                 </ul>
             </div>
             <div class="box-search">
                 <input type="text" placeholder="Tên phim, anime, comic, diễn viên, nghệ sĩ,...">
-                <div>
+                <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-
+                <div class="search">
+                    <span></span>
+                    <div class="search-items">
+                        <h3>VIDEO</h3>
+                        <div class="search-item">
+                            <ul>
+                                <li><a href="#">Black Clover</a></li>
+                                <li><a href="#">Naruto Shippuden</a></li>
+                                <li><a href="#">One Piece</a></li>
+                                <li><a href="#">Thiên Thần Hộ Vệ</a></li>
+                                <li><a href="#">GroovinOn</a></li>
+                            </ul>
+                        </div>
+                        <h3>COMIC</h3>
+                        <div class="search-item">
+                            <ul>
+                                <li><a href="#">Black Clover</a></li>
+                                <li><a href="#">Naruto Shippuden</a></li>
+                                <li><a href="#">One Piece</a></li>
+                                <li><a href="#">Thiên Thần Hộ Vệ</a></li>
+                                <li><a href="#">GroovinOn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="user">
                 <a href="./html/login.html">ĐĂNG NHẬP</a>
                 <a href="./html/register.html">ĐĂNG KÝ</a>
                 <img class="login"
                     src="https://products.popsww.com/api/v2/containers/file2/profiles/Adult-01.png?maxW=120" alt="">
+                <div class="user-box">
+                    <div class="events">
+                        <img src="https://cdn.popsww.com/popsapp/assets/images/account/gift.png" alt="">
+                        <div class="events-tittle">
+                            <h3>Đăng kí ngay</h3>
+                            <span>Để nhận những phần quà và ưu đãi hấp dẫn cho thành viên.</span>
+                        </div>
+                        <img src="https://cdn.popsww.com/popsapp/assets/images/account/go-btn.png" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Mua gói</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Miễn phí data</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Yêu thích</span>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Mua gói</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Miễn phí data</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                            <span>Yêu thích</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <section>
@@ -629,8 +697,10 @@
         }
     })
     let scroll1 = document.querySelector('.on-top')
+    let scroll2 = document.querySelector('header')
     window.addEventListener('scroll', () => {
         scroll1.classList.toggle('scroll-active', window.scrollY > 450)
+        scroll2.classList.toggle('scroll-header', window.scrollY > 150)
     })
     scroll1.addEventListener('click', () => {
         window.scrollTo({
@@ -638,6 +708,11 @@
             behavior: "smooth"
         })
     })
+
+    let img = document.querySelector('.user img')
+    img.onclick = ()=>{
+        document.querySelector('.user-box').classList.toggle('hide')
+    }
 </script>
 <!-- <script src="./javascript/login.js"></script> -->
 
