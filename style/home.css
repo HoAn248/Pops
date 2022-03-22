@@ -283,13 +283,15 @@ body {
   background-color: #141414;
 }
 
+section .sildershow {
+  position: relative;
+}
 section .sildershow input {
   display: none;
 }
 section .sildershow .slides {
   animation: slide 0.3s linear;
   display: none;
-  position: relative;
   transition: 0.5s;
 }
 section .sildershow .slides .bg-slide {
@@ -339,7 +341,7 @@ section .sildershow .slides::before {
 }
 section .sildershow .navigation {
   position: absolute;
-  top: 20%;
+  top: 50%;
   right: 1%;
   transform: translateY(-50%);
 }
@@ -378,6 +380,9 @@ section .sildershow #slide-3:checked ~ .s3 {
 }
 section .sildershow #slide-4:checked ~ .s4 {
   display: block;
+}
+section .adds {
+  cursor: pointer;
 }
 section .slider-pops {
   padding-top: 3rem;
