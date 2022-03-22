@@ -90,4 +90,12 @@
     header .user {
       width: 60%;
     }
+    .user-box{
+      bottom: -40rem !important;
+    }
   }
+@media screen and (max-width: 1000px) {
+  .icon-control{
+    display: none !important;
+  }
+}
