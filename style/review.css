@@ -1,0 +1,104 @@
+.bg-film{
+    position: relative;
+}
+.bg-film::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0,1), rgba(0,0,0,0.4));
+}
+.bg-film img{
+    display: block;
+    width: 100%;
+}
+.film-content{
+    color: white;
+    padding: 2rem;
+}
+.film-content h1{
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+.film-content ul span{
+    color: #bcbcbc;
+    font-size: 2rem;
+    float: left;
+}
+.film-content ul li{
+    float: left;
+    font-size: 2rem;
+    color: #ea6016;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+.film-review{
+    display: flex;
+    justify-content: space-around;
+    clear: left;
+}
+.film-review-left{
+    width: 40%;
+}
+.film-icon{
+    width: 100%;
+    display: flex;
+}
+.film-icon div{
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 2rem;
+}
+.film-icon div i{
+    font-size: 2rem;
+}
+.film-review-left h5{
+    font-size: 1.8rem;
+    color: #bcbcbc;
+    display: flex;
+    flex-wrap: wrap;
+}
+.film-review-left span{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
+    display: unset;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+.film-review-right{
+    width: 40%;
+}
+.film-review-right h5{
+    font-size: 2rem;
+    color: #bcbcbc;
+    padding: 1rem;
+}
+.film-review-right span{
+    font-size: 1.6rem;
+    color: white;
+}
+.film-review-right p{
+    font-size: 1.6rem;
+    color: #ea6016;
+    display: inline;
+}
+.review-tittle{
+    display: block !important;
+    display: -webkit-box !important;
+}
+.more-active{
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.more{
+    cursor: pointer;
+    width: 100px;
+}

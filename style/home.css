@@ -430,6 +430,7 @@ section .slider-pops .list-slide .slider .slide-items .item .item-bg {
   width: 100%;
   overflow: hidden;
   transition: 0.3s;
+  border-radius: 0.3rem;
 }
 section .slider-pops .list-slide .slider .slide-items .item .item-bg img {
   width: 100%;
