@@ -87,6 +87,12 @@
     header .box-search {
       width: 20%;
     }
+    header .box-search .search-icon{
+      padding: 1.6rem;
+    }
+    header .box-search .search-icon i{
+      font-size: 1rem;
+    }
     header .user {
       width: 60%;
     }
